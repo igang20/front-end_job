@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FrontendJOB IT-вакансии</title>
+    <link rel="stylesheet" href="./style/mainStyles.css" />
+    <link rel="stylesheet" href="./style/normalise.css" />
+    <link rel="shortcut icon" href="./img/Faficon.png" type="image/x-icon" />
+  </head>
+  <body>
+    <header>
+      <div class="contentWrapper">
+        <img src="./img/headerLOGO.svg" alt="headerLogo" />
+        <nav class="headerLinksWrapper">
+          <a href="#" class="headerLink">Поиск вакансий</a>
+          <a href="#" class="headerLink">Избранные вакансии</a>
+        </nav>
+      </div>
+    </header>
+    <main class="main">
+      <div class="contentWrapper">
+        <nav class="filterPanel">
+          <div id="locationFilter">
+            <img src="./img/locationImg.svg" alt="location" />
+            <input type="text" placeholder="Москва" />
+          </div>
+          <div id="typeOfBusyFilter">
+            <img src="./img/workTimeImg.svg" alt="typeOfBusy" />
+
+            <span id="bussyType">Гибкий график</span>
+          </div>
+          <div id="workTimeFilter">
+            <img src="./img/typeOfBusyImg.svg" alt="typeOfBusy" />
+            <span id="bussyType">Частичная занятость</span>
+          </div>
+          <div id="WorkExpFilter">
+            <img src="./img/workExpImg.svg" alt="workExp" />
+            <span class="workExp">От 1 года до 3 лет</span>
+          </div>
+          <div id="salaryFilter">
+            <img src="./img/salaryImg.svg" alt="salariImg" />
+            <input type="number" placeholder="150 000" name="salaryInput" />
+            <label for="salaryInput"> руб.</label>
+          </div>
+
+          <div id="submitFilterForm">Поиск</div>
+        </nav>
+
+        <section class="cardsSection"></section>
+      </div>
+    </main>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
