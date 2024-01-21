@@ -26,17 +26,167 @@
             <input type="text" placeholder="Москва" />
           </div>
           <div id="typeOfBusyFilter">
-            <img src="./img/workTimeImg.svg" alt="typeOfBusy" />
+            <input type="checkbox" name="filtresOpener" id="filtresOpener" />
+            <label for="filtresOpener" id="buttonWrapper">
+              <img src="./img/workTimeImg.svg" alt="typeOfBusy" />
+              <span id="bussyType">График работы</span>
+            </label>
+            <div class="dropDownMenu">
+              <ul class="filterItems">
+                <li class="filterItem">
+                  <div class="inputWrapper">
+                    <input
+                      type="checkbox"
+                      name="FullDay"
+                      id="fullDayParametr"
+                    />
 
-            <span id="bussyType">Гибкий график</span>
+                    <label for="fullDayParametr"></label>
+                  </div>
+                  <label for="fullDayParametr">Полный День</label>
+                </li>
+                <li class="filterItem">
+                  <div class="inputWrapper">
+                    <input
+                      type="checkbox"
+                      name="flexBusy"
+                      id="flexBusyParametr"
+                    />
+                    <label for="flexBusyParametr"></label>
+                  </div>
+
+                  <label for="flexBusyParametr">Гибкий График</label>
+                </li>
+                <li class="filterItem">
+                  <div class="inputWrapper">
+                    <input
+                      type="checkbox"
+                      name="remoteWork"
+                      id="remoеteWorkParametr"
+                    />
+                    <label for="remoеteWorkParametr"></label>
+                  </div>
+
+                  <label for="remoеteWorkParametr">Удаленная работа</label>
+                </li>
+              </ul>
+            </div>
           </div>
           <div id="workTimeFilter">
-            <img src="./img/typeOfBusyImg.svg" alt="typeOfBusy" />
-            <span id="bussyType">Частичная занятость</span>
+            <div id="buttonWrapper">
+              <img src="./img/typeOfBusyImg.svg" alt="typeOfBusy" />
+              <span id="bussyType">Частичная занятость</span>
+            </div>
+            <div class="dropDownMenu">
+              <ul class="filterItems">
+                <li class="filterItem">
+                  <div class="inputWrapper">
+                    <input
+                      type="checkbox"
+                      name="fullBusy"
+                      id="fullBusyParametr"
+                    />
+                    <label for="fullBusyParametr"></label>
+                  </div>
+
+                  <label for="fullBusyParametr">Полная занятость</label>
+                </li>
+                <li class="filterItem">
+                  <div class="inputWrapper">
+                    <input
+                      type="checkbox"
+                      name="participalBusy"
+                      id="participalBusyParametr"
+                    />
+                    <label for="participalBusyParametr"></label>
+                  </div>
+
+                  <label for="participalBusyParametr"
+                    >Частичная занятость</label
+                  >
+                </li>
+                <li class="filterItem">
+                  <div class="inputWrapper">
+                    <input
+                      type="checkbox"
+                      name="projectWork"
+                      id="projectWorkParametr"
+                    />
+                    <label for="projectWorkParametr"></label>
+                  </div>
+
+                  <label for="projectWorkParametr">Проектная работа</label>
+                </li>
+                <li class="filterItem">
+                  <div class="inputWrapper">
+                    <input
+                      type="checkbox"
+                      name="studyCours"
+                      id="studyCoursParametr"
+                    />
+                    <label for="studyCoursParametr"></label>
+                  </div>
+
+                  <label for="studyCoursParametr">Стажировка</label>
+                </li>
+              </ul>
+            </div>
           </div>
           <div id="WorkExpFilter">
-            <img src="./img/workExpImg.svg" alt="workExp" />
-            <span class="workExp">От 1 года до 3 лет</span>
+            <div id="buttonWrapper">
+              <img src="./img/workExpImg.svg" alt="workExp" />
+              <span class="workExp">От 1 года до 3 лет</span>
+            </div>
+            <div class="dropDownMenu">
+              <ul class="filterItems">
+                <li class="filterItem">
+                  <div class="inputWrapper">
+                    <input type="checkbox" name="noExp" id="noExpParametr" />
+                    <label for="noExpParametr"></label>
+                  </div>
+
+                  <label for="noExpParametr">Нет опыта</label>
+                </li>
+                <li class="filterItem">
+                  <div class="inputWrapper">
+                    <input
+                      type="checkbox"
+                      name="oneToThreeYearsExp"
+                      id="oneToThreeYearsExpParametr"
+                    />
+                    <label for="oneToThreeYearsExpParametr"></label>
+                  </div>
+
+                  <label for="oneToThreeYearsExpParametr"
+                    >От 1 года до 3 лет</label
+                  >
+                </li>
+                <li class="filterItem">
+                  <div class="inputWrapper">
+                    <input
+                      type="checkbox"
+                      name="threeToSixYearsExp"
+                      id="threeToSixYearsExpParametr"
+                    />
+                    <label for="threeToSixYearsExp"></label>
+                  </div>
+
+                  <label for="threeToSixYearsExpParametr">От 3 до 6 лет</label>
+                </li>
+                <li class="filterItem">
+                  <div class="inputWrapper">
+                    <input
+                      type="checkbox"
+                      name="moreSixYears"
+                      id="moreSixYearsParametr"
+                    />
+                    <label for="moreSixYearsParametr"></label>
+                  </div>
+
+                  <label for="moreSixYearsParametr">Более 6 лет</label>
+                </li>
+              </ul>
+            </div>
           </div>
           <div id="salaryFilter">
             <img src="./img/salaryImg.svg" alt="salariImg" />

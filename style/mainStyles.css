@@ -80,22 +80,22 @@ header > .contentWrapper {
 
 #locationFilter > input {
   width: 100%;
+  all: unset;
 }
 
 #typeOfBusyFilter {
   width: 207px;
   display: flex;
-  gap: 20px;
   align-items: center;
   justify-content: center;
-
+  flex-wrap: wrap;
   border-right: 2px #f9f9f9 solid;
 }
 
 #workTimeFilter {
   width: 249px;
   display: flex;
-  gap: 20px;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   border-right: 2px #f9f9f9 solid;
@@ -105,7 +105,7 @@ header > .contentWrapper {
   width: 216px;
   border-right: 2px #f9f9f9 solid;
   display: flex;
-  gap: 20px;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
 }
@@ -119,6 +119,9 @@ header > .contentWrapper {
   border-right: 2px #f9f9f9 solid;
 }
 
+#salaryFilter > input {
+  all: unset;
+}
 #salaryFilter > input {
   text-align: right;
   width: 60px;
@@ -142,7 +145,95 @@ header > .contentWrapper {
   align-items: center;
   justify-content: center;
 }
+/* Стилизация Drop-down меню */
+.dropDownMenu {
+  width: 100%;
+  position: relative;
+  background: #fff;
+  box-shadow: 5px 9px 8px 0px rgba(0, 0, 0, 0.03);
+  border-radius: 0px 0px 10px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
 
+#buttonWrapper {
+  height: 60px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.filterItems {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  color: #49627e;
+  gap: 8px;
+
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.filterItem {
+  display: flex;
+  width: 170px;
+  height: 21px;
+  align-items: center;
+  text-align: center;
+  gap: 12px;
+}
+
+.filterItem > label {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+#typeOfBusyFilter > .dropDownMenu {
+  height: 110px;
+}
+
+#workTimeFilter > .dropDownMenu {
+  height: 135px;
+}
+
+#WorkExpFilter > .dropDownMenu {
+  height: 135px;
+}
+
+#filtresOpener {
+  display: none;
+}
+
+.inputWrapper > input[type="checkbox"] {
+  display: none;
+}
+
+.inputWrapper > [type="checkbox"] + label {
+  transition: background ease 0.3s;
+  background: url(../img/radio-off.svg);
+  display: inline-block;
+  height: 16px;
+  width: 16px;
+}
+.inputWrapper > [type="checkbox"]:checked + label {
+  background: url(../img/radio-on.svg);
+  height: 16px;
+  width: 16px;
+  display: inline-block;
+  padding: 0 0 0 0px;
+}
 /* Стили карточек */
 
 .cardsSection {
