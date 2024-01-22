@@ -20,14 +20,18 @@
     </header>
     <main class="main">
       <div class="contentWrapper">
-        <nav class="filterPanel">
+        <nav class="filterPanel" id="filterPanel">
           <div id="locationFilter">
             <img src="./img/locationImg.svg" alt="location" />
             <input type="text" placeholder="Москва" />
           </div>
           <div id="typeOfBusyFilter">
-            <input type="checkbox" name="filtresOpener" id="filtresOpener" />
-            <label for="filtresOpener" id="buttonWrapper">
+            <input
+              type="checkbox"
+              id="busyFiltresOpener"
+              class="filtresOpener"
+            />
+            <label for="busyFiltresOpener" id="buttonWrapper">
               <img src="./img/workTimeImg.svg" alt="typeOfBusy" />
               <span id="bussyType">График работы</span>
             </label>
@@ -73,10 +77,15 @@
             </div>
           </div>
           <div id="workTimeFilter">
-            <div id="buttonWrapper">
-              <img src="./img/typeOfBusyImg.svg" alt="typeOfBusy" />
-              <span id="bussyType">Частичная занятость</span>
-            </div>
+            <input
+              type="checkbox"
+              id="workTimeFiltresOpener"
+              class="filtresOpener"
+            />
+            <label for="workTimeFiltresOpener" id="buttonWrapper"
+              ><img src="./img/typeOfBusyImg.svg" alt="typeOfBusy" />
+              <span id="bussyType">Частичная занятость</span></label
+            >
             <div class="dropDownMenu">
               <ul class="filterItems">
                 <li class="filterItem">
@@ -133,10 +142,15 @@
             </div>
           </div>
           <div id="WorkExpFilter">
-            <div id="buttonWrapper">
+            <input
+              type="checkbox"
+              id="workExpFiltresOpener"
+              class="filtresOpener"
+            />
+            <label for="workExpFiltresOpener" id="buttonWrapper">
               <img src="./img/workExpImg.svg" alt="workExp" />
-              <span class="workExp">От 1 года до 3 лет</span>
-            </div>
+              <span class="workExp">От 1 года до 3 лет</span></label
+            >
             <div class="dropDownMenu">
               <ul class="filterItems">
                 <li class="filterItem">
@@ -168,7 +182,7 @@
                       name="threeToSixYearsExp"
                       id="threeToSixYearsExpParametr"
                     />
-                    <label for="threeToSixYearsExp"></label>
+                    <label for="threeToSixYearsExpParametr"></label>
                   </div>
 
                   <label for="threeToSixYearsExpParametr">От 3 до 6 лет</label>

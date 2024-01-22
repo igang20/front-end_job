@@ -201,18 +201,21 @@ header > .contentWrapper {
 }
 
 #typeOfBusyFilter > .dropDownMenu {
+  display: none;
   height: 110px;
 }
 
 #workTimeFilter > .dropDownMenu {
+  display: none;
   height: 135px;
 }
 
 #WorkExpFilter > .dropDownMenu {
+  display: none;
   height: 135px;
 }
 
-#filtresOpener {
+.filtresOpener {
   display: none;
 }
 
