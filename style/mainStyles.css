@@ -242,3 +242,21 @@ header > .contentWrapper {
   border-radius: 10px 0px 0px 10px;
   background: #0070FB;
 }
+
+.wrapperOfSections {
+  display: flex;
+  flex-direction: row;
+}
+
+#bigCard {
+  width: 660px;
+  height: 587px;
+  background: #FFF;
+  margin-top: 40px;
+  border-radius: 10px;
+  box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.03);
+}
+
+.isLiked, .unLiked {
+  cursor: pointer;
+}
