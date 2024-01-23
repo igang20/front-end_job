@@ -1,0 +1,33 @@
+* {
+  font-family: "Montserrat";
+}
+
+body
+
+#vacancyForm {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 10px;
+  width: 460px;
+  border-radius: 10px;
+  margin-top: 25px;
+}
+
+input {
+  border: 1px solid #333;
+}
+
+label {
+  margin-top: 10px;
+}
+
+button {
+  margin-top: 5px;
+}
+main {
+  display: flex;
+  width: 100%;
+  min-height: calc(100vh - 74px);
+  justify-content: center;
+}

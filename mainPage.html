@@ -6,6 +6,7 @@
     <title>FrontendJOB IT-вакансии</title>
     <link rel="stylesheet" href="./style/mainStyles.css" />
     <link rel="stylesheet" href="./style/normalise.css" />
+    <link rel="stylesheet" href="./max-branch/inputPage.css"> <!-- Временные стили(для инпута)-->
     <link rel="shortcut icon" href="./img/Faficon.png" type="image/x-icon" />
   </head>
   <body>
@@ -13,8 +14,9 @@
       <div class="contentWrapper">
         <img src="./img/headerLOGO.svg" alt="headerLogo" />
         <nav class="headerLinksWrapper">
-          <a href="#" class="headerLink">Поиск вакансий</a>
+          <a href="mainPage.html" class="headerLink">Поиск вакансий</a>
           <a href="#" class="headerLink">Избранные вакансии</a>
+          <a href="./max-branch/inputPage.html" class="headerLink">Создать объявление</a>
         </nav>
       </div>
     </header>
@@ -48,102 +50,119 @@
         </nav>
 
         <div class="wrapperOfSections">
-        <section class="cardsSection">
-          <div class="card">
-            <img src="./img/internet-people_company.png" alt="internet-people logo">
-            <div class="vacancyInfo">
-              <div class="companyInfo">
-                <span>Интернет Люди</span>
-                <h3>Front-end Разработчиĸ</h3>
-                <span>Москва<span>
+          <section class="cardsSection" id="cardsSection">
+            <div class="card">
+              <img src="./img/internet-people_company.png" alt="internet-people logo">
+              <div class="vacancyInfo">
+                <div class="companyInfo">
+                  <span>Интернет Люди</span>
+                  <h3>Front-end Разработчиĸ</h3>
+                  <span>Москва</span>
+                </div>
+                <div id="filtersContainer" class="filters">
+                  <span id="jQueryFilter">jQuery</span>
+                  <span id="JavaScriptFilter">JavaScript</span>
+                  <span id="CSS3Filter">CSS3</span>
+                  <span id="ReactFilter">React</span>
+                  <span id="GitFilter">Git</span>
+                  <span id="VueFilter">Vue</span>
+                  <span id="FlexboxFilter">Flexbox</span>
+                  <span id="HTML5Filter">HTML5</span>
+                </div>
               </div>
-              <div id="filtersContainer" class="filters">
-                <span id="jQueryFilter">jQuery</span>
-                <span id="JavaScriptFilter">JavaScript</span>
-                <span id="CSS3Filter">CSS3</span>
-                <span id="ReactFilter">React</span>
-                <span id="GitFilter">Git</span>
-                <span id="VueFilter">Vue</span>
-                <span id="FlexboxFilter">Flexbox</span>
-                <span id="HTML5Filter">HTML5</span>
+              <div class="cardAttr">
+                <img src="./img/like-on.svg" alt="favorite" class="isLiked">
+                <span id="vacancyDate">29/03/2021</span>
               </div>
             </div>
-            <div class="cardAttr">
-              <img src="./img/like-on.svg" alt="favorite" class="isLiked">
-              <span id="vacancyDate">29/03/2021</span>
-            </div>
-          </div>
 
-          <div class="card">
-            <img src="./img/unimaged.svg" alt="unimaged logo">
-            <div class="vacancyInfo">
-              <div class="companyInfo">
-                <span>GOOD CALL DEVELOPMENT</span>
-                <h3>React Developer (Middle/Senior)</h3>
-                <span>Москва<span>
+            <div class="card">
+              <img src="./img/unimaged.svg" alt="unimaged logo">
+              <div class="vacancyInfo">
+                <div class="companyInfo">
+                  <span>GOOD CALL DEVELOPMENT</span>
+                  <h3>React Developer (Middle/Senior)</h3>
+                  <span>Москва</span>
+                </div>
+                <div id="filtersContainer" class="filters">
+                  <span id="jQueryFilter">jQuery</span>
+                  <span id="JavaScriptFilter">JavaScript</span>
+                  <span id="CSS3Filter">CSS3</span>
+                  <span id="ReactFilter">React</span>
+                  <span id="GitFilter">Git</span>
+                </div>
               </div>
-              <div id="filtersContainer" class="filters">
-                <span id="jQueryFilter">jQuery</span>
-                <span id="JavaScriptFilter">JavaScript</span>
-                <span id="CSS3Filter">CSS3</span>
-                <span id="ReactFilter">React</span>
-                <span id="GitFilter">Git</span>
+              <div class="cardAttr">
+                <img src="./img/like-off.svg" alt="unfavorite" class="unLiked" >
+                <span id="vacancyDate">29/03/2021</span>
               </div>
             </div>
-            <div class="cardAttr">
-              <img src="./img/like-off.svg" alt="unfavorite" class="unLiked" >
-              <span id="vacancyDate">29/03/2021</span>
-            </div>
-          </div>
 
-          <div class="card">
-            <div id="activeCardAttr"></div>
-            <img src="./img/winfinity.png" alt="winfinity logo">
-            <div class="vacancyInfo">
-              <div class="companyInfo">
-                <span>Winfinity</span>
-                <h3>Frontend developer (React)</h3>
-                <span>Москва<span>
+            <div class="card">
+              <div id="activeCardAttr"></div>
+              <img src="./img/winfinity.png" alt="winfinity logo">
+              <div class="vacancyInfo">
+                <div class="companyInfo">
+                  <span>Winfinity</span>
+                  <h3>Frontend developer (React)</h3>
+                  <span>Москва</span>
+                </div>
+                <div id="filtersContainer" class="filters">
+                  <span id="jQueryFilter">jQuery</span>
+                  <span id="JavaScriptFilter">JavaScript</span>
+                </div>
               </div>
-              <div id="filtersContainer" class="filters">
-                <span id="jQueryFilter">jQuery</span>
-                <span id="JavaScriptFilter">JavaScript</span>
+              <div class="cardAttr">
+                <img src="./img/like-on.svg" alt="favorite" class="isLiked" >
+                <span id="vacancyDate">29/03/2021</span>
               </div>
             </div>
-            <div class="cardAttr">
-              <img src="./img/like-on.svg" alt="favorite" class="isLiked" >
-              <span id="vacancyDate">29/03/2021</span>
-            </div>
-          </div>
 
-          <div class="card">
-            <img src="./img/Diagnocat.png" alt="Diagnocat logo">
-            <div class="vacancyInfo">
-              <div class="companyInfo">
-                <span>Diagnocat</span>
-                <h3>Frontend developer</h3>
-                <span>Москва<span>
+            <div class="card">
+              <img src="./img/Diagnocat.png" alt="Diagnocat logo">
+              <div class="vacancyInfo">
+                <div class="companyInfo">
+                  <span>Diagnocat</span>
+                  <h3>Frontend developer</h3>
+                  <span>Москва</span>
+                </div>
+                <div id="filtersContainer" class="filters">
+                  <span id="jQueryFilter">jQuery</span>
+                  <span id="JavaScriptFilter">JavaScript</span>
+                  <span id="CSS3Filter">CSS3</span>
+                  <span id="ReactFilter">React</span>
+                  <span id="GitFilter">Git</span>
+                  <span id="VueFilter">Vue</span>
+                  <span id="FlexboxFilter">Flexbox</span>
+                  <span id="HTML5Filter">HTML5</span>
+                </div>
               </div>
-              <div id="filtersContainer" class="filters">
-                <span id="jQueryFilter">jQuery</span>
-                <span id="JavaScriptFilter">JavaScript</span>
-                <span id="CSS3Filter">CSS3</span>
-                <span id="ReactFilter">React</span>
-                <span id="GitFilter">Git</span>
-                <span id="VueFilter">Vue</span>
-                <span id="FlexboxFilter">Flexbox</span>
-                <span id="HTML5Filter">HTML5</span>
+              <div class="cardAttr">
+                <img src="./img/like-off.svg" alt="unfavorite" class="unLiked">
+                <span id="vacancyDate">29/03/2021</span>
               </div>
             </div>
-            <div class="cardAttr">
-              <img src="./img/like-off.svg" alt="unfavorite" class="unLiked">
-              <span id="vacancyDate">29/03/2021</span>
-            </div>
-          </div>
-        </section>
-        <section id="bigCard">
-        </section>
-      </div>
+          </section>
+          <section id="bigCard">
+            <form id="vacancyForm">
+              <label for="company">Company:</label>
+              <input type="text" id="companyInput" name="company" required>
+        
+              <label for="position">Position:</label>
+              <input type="text" id="positionInput" name="position" required>
+        
+              <label for="location">Location:</label>
+              <input type="text" id="locationInput" name="location" required>
+        
+              <!-- <label for="filters">Filters:</label>
+              <input type="checkbox" id="filtersInput" name="filters" required> -->
+        
+              <label for="date">Date:</label>
+              <input type="date" id="dateInput" name="date" required>
+        
+               <button type="button" id="createVacancyButton">Создать объясвление</button> 
+          </section>
+        </div>
       </div>
     </main>
     <script src="./js/script.js"></script>
