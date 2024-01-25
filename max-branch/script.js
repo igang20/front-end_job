@@ -29,12 +29,10 @@ createVacancyButton.onclick = () => {
   const newVacancyCard = new VacancyCard(
     companyInput = document.getElementById('companyInput').value,
     positionInput = document.getElementById('positionInput').value,
-    locationInput = document.getElementById('locationInput').value,
+    locationInput = document.getElementById('locationSelect').value,
     dateInput = document.getElementById('dateInput').value,
-    true
+    false
   )
-
-  // тут надо преобразовать дату
 
   if (companyInput !== "" && 
       positionInput !== "" && 

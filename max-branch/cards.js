@@ -10,6 +10,13 @@ class VacancyCard {
   }
 
   displayCard() {
+
+    let dateElem = new Date(this.date)
+    let month = dateElem.getMonth();
+    month += 1;
+    let day = dateElem.getDate();
+    let year = dateElem.getFullYear();
+
     const newCard = document.createElement('div');
     newCard.classList.add('card')
     newCard.innerHTML = 
@@ -34,7 +41,7 @@ class VacancyCard {
     </div>
     <div class="cardAttr">
       <img src="./img/like-on.svg" alt="favorite" class="isLiked">
-      <span id="vacancyDate">${this.date}</span>
+      <span id="vacancyDate">${day}/${month}/${year}</span>
     </div>
   `;
   document.getElementById('cardsSection').appendChild(newCard)
